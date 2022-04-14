@@ -18,6 +18,7 @@ const App = () => {
 
   const calculado = () => {
     try{
+      // eslint-disable-next-line no-eval
       setResult(eval(result).toString());
     }catch (err) {
       setResult("Erro!!");
