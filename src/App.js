@@ -24,8 +24,8 @@ const App = () => {
         </form>
 
         <div className="keypad">
-          <button onClick={clear} id="clear">Clear</button>
-          <button onClick={backspace} id="backspace">C</button>
+          <button className="highlight" onClick={clear} id="clear">Clear</button>
+          <button className="highlight" onClick={backspace} id="backspace">C</button>
           <button name="/" onClick={handleClick}>&divide;</button>
           <button name="7" onClick={handleClick}>7</button>
           <button name="8" onClick={handleClick}>8</button>
@@ -41,7 +41,7 @@ const App = () => {
           <button name="+" onClick={handleClick}>+</button>
           <button name="0" onClick={handleClick}>0</button>
           <button name="." onClick={handleClick}>.</button>
-          <button onClick={handleClick}>=</button>
+          <button className="highlight" onClick={handleClick} id="resultado">=</button>
         </div>
       </div>
     </div>
