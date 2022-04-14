@@ -1,9 +1,10 @@
-import './App.css';
+import React, {useState} from 'react';
 
-function App() {
+const App = () => {
+  const [result, setResult] = useState("hii");
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1>{result}</h1>
     </div>
   );
 }
