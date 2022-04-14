@@ -51,11 +51,11 @@ input[type="text"] {
 #resultado {
     grid-column: 3/5;
     grid-row: 5;
-    color:#262834;
+    color: #262834;
 }
 
 #backspace {
-    color:#262834;
+    color: #262834;
 }
 
 button {
@@ -68,7 +68,7 @@ button {
     font-weight: 500;
 }
 
-input:focus, 
+input:focus,
 input:active,
 button:focus,
 button:active {
