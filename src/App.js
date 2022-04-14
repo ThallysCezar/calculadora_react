@@ -13,7 +13,15 @@ const App = () => {
   }
 
   const backspace = () => {
+    setResult(result.slice(0, result.length - 1));
+  }
 
+  const calculado = () => {
+    try{
+      setResult(eval(result).toString());
+    }catch (err) {
+      setResult("Erro!!");
+    }
   }
 
   return (
@@ -41,7 +49,7 @@ const App = () => {
           <button className="highlight" name="+" onClick={handleClick}>+</button>
           <button name="0" onClick={handleClick}>0</button>
           <button className="highlight" name="." onClick={handleClick}>.</button>
-          <button className="highlight" onClick={handleClick} id="resultado">=</button>
+          <button className="highlight" onClick={calculado} id="resultado">=</button>
         </div>
       </div>
     </div>
